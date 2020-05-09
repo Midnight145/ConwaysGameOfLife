@@ -53,7 +53,7 @@ while not gameEnd:
 
         if event.type == pygame.KEYDOWN:
             if event.key == pygame.K_SPACE:
-                flag = True
+                flag = not flag
         if event.type == pygame.MOUSEBUTTONDOWN:
             currentCell = Cell.newCell(pygame.mouse.get_pos(), board, cells)
             if currentCell == -1:
